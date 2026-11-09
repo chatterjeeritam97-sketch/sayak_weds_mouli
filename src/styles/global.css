@@ -79,6 +79,27 @@ h3 {
   outline-offset: 2px;
 }
 
+.music-player[aria-pressed='false'] {
+  animation: music-player-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes music-player-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(168, 107, 85, 0.28);
+  }
+
+  50% {
+    box-shadow: 0 0 0 0.35rem rgba(168, 107, 85, 0.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .music-player[aria-pressed='false'] {
+    animation: none;
+  }
+}
+
 .invitation-screen {
   min-height: 94dvh;
   background: rgba(251, 247, 241, 0.78);
