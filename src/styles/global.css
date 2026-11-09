@@ -145,12 +145,32 @@ h3 {
 }
 
 .venue-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
   color: #8e1218;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.2;
+  text-decoration: none;
+}
+
+.venue-link-name {
+  text-decoration: underline;
   text-decoration-color: rgba(142, 18, 24, 0.42);
   text-underline-offset: 0.2em;
+}
+
+.venue-link-destination {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--color-ink-muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .venue-link:hover,
@@ -188,6 +208,10 @@ h3 {
 .pulse-link {
   display: inline-block;
   animation: invite-link-pulse 2.2s ease-in-out infinite;
+}
+
+.venue-link.pulse-link {
+  display: flex;
 }
 
 @keyframes invite-link-pulse {

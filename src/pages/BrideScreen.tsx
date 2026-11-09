@@ -9,7 +9,7 @@ const brideCopy: ProfileCopy = {
   name: 'Mouli Roy Choudhury',
   father: 'Father: Mr. Madhab Roy Choudhury',
   mother: 'Mother: Mrs. Lakshmi Roy Choudhury',
-  address: '🏠 Dakshin Chatra, Doctorkhana',
+  address: '🏠 Dakshin Chatra, Machlandapur',
 }
 
 export function BrideScreen() {

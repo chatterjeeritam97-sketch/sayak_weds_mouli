@@ -25,8 +25,12 @@ export function ClosingScreen() {
           href={venueUrl}
           target="_blank"
           rel="noreferrer"
+          aria-label="Open Ivory Royal Banquet in Google Maps"
         >
-          Ivory Royal Banquet
+          <span className="venue-link-name">Ivory Royal Banquet</span>
+          <span className="venue-link-destination">
+            Click to maps <span aria-hidden="true">↗</span>
+          </span>
         </a>
         <p className="venue-address">
           48F B.T. Road, Sinthi More, Kolkata- 700050
