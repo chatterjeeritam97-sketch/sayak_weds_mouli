@@ -10,7 +10,7 @@
   --color-ink-muted: #6b5348;
 
   --font-bengali: 'Nirmala UI', 'Vrinda', 'Noto Sans Bengali', serif;
-  --font-english: 'Iowan Old Style', Palatino, 'Palatino Linotype', Georgia, serif;
+  --font-english: 'Montserrat', sans-serif;
 }
 
 html,
@@ -25,6 +25,7 @@ body {
   color: var(--color-ink);
   font-family: var(--font-english);
   font-size: 1.0625rem;
+  font-weight: 500;
   line-height: 1.65;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -340,7 +341,7 @@ h3 {
   color: var(--color-ink-muted);
   font-size: 1rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .reception-date {
@@ -352,7 +353,7 @@ h3 {
 .reception-time {
   color: var(--color-ink);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @media (max-width: 520px) {
